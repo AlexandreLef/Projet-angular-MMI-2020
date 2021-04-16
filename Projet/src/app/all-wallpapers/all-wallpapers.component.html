@@ -1,0 +1,20 @@
+<main id=main>
+
+    <section>
+        <div class="card-columns">
+            <div class="card text-white bg-secondary border-0" *ngFor="let wallpaper of allWallpapers">
+                <img [id]="wallpaper.id" [src]="wallpaper.thumbs.original" alt="" class="card-img-top h-100">
+                <div class="card-body row">
+                    <div class="col-6">
+                        <p style="display: inline-block; margin-right: 1em;">{{wallpaper.favorites}} <i class="fas fa-heart" style="color:crimson ;"></i></p>
+                        <p style="display: inline-block;"></p>{{wallpaper.views}} <i class="far fa-eye"></i>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a [routerLink]="'wallpaper/' + wallpaper.id" class="btn btn-info">View</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+    
+</main>

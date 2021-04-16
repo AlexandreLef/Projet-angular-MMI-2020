@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+    "target": "https://wallhaven.cc",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+    }
+   }
